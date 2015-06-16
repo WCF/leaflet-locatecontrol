@@ -174,7 +174,7 @@ You can find the project at: https://github.com/domoritz/leaflet-locatecontrol
                             padding: this.options.circlePadding,
                             maxZoom: this.options.keepCurrentZoomLevel ?
                             map.getZoom() : this.options.locateOptions.maxZoom
-                        });
+                        }, this.options.fitBoundsOptions);
                     }
                 }
                 this._locateOnNextLocationFound = false;
